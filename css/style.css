@@ -29,7 +29,8 @@ body {
   letter-spacing: 2px;
 }
 
-/* HERO */
+/*hero */
+
 header {
   min-height: 70vh;
   display: flex;
