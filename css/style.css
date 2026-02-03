@@ -1,0 +1,203 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #0b0b0b, #111);
+  color: #fff;
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* CORES */
+:root {
+  --gold: #d4af37;
+  --gold-dark: #b8962e;
+  --black: #000;
+  --dark: #111;
+}
+
+/* NAVBAR */
+.bg-barber {
+  background: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand span {
+  letter-spacing: 2px;
+}
+
+/* HERO */
+header {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.85), rgba(0,0,0,.95)),
+    url("../img/corte.png") center/cover no-repeat;
+}
+
+header h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  color: var(--gold);
+  letter-spacing: 3px;
+}
+
+header p {
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+/* BOTÕES */
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 50px;
+  transition: all .3s ease;
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(212,175,55,.35);
+}
+
+/* SERVIÇOS */
+#servicos h2 {
+  letter-spacing: 2px;
+}
+
+.card {
+  background: linear-gradient(180deg, #0f0f0f, #151515);
+  border: none;
+  border-radius: 18px;
+  transition: all .35s ease;
+   overflow: hidden;           /* corta só o excesso invisível */
+
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,.6);
+}
+
+.card-img-top {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;          /* preenche o espaço */
+  object-position: center;    /* enquadra certo */
+  padding: 0;                 /* REMOVE a borda */
+  background: none;           /* REMOVE fundo */
+}
+
+.card h5 {
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+/* MODAL */
+.modal-content {
+  background: linear-gradient(180deg, #0f0f0f, #141414);
+  border-radius: 20px;
+}
+
+.modal h5 {
+  color: var(--gold);
+}
+
+/* SOBRE */
+section p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+  opacity: .9;
+}
+
+/* MAPA */
+iframe {
+  border-radius: 18px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  font-size: .9rem;
+  opacity: .85;
+}
+
+/* Fonte */
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fonte{
+ font-family:Cookie
+
+}
+
+.chango-regular {
+  font-family: "Chango", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Changofonte{
+ font-family:Chango
+
+}
+
+/* HERO */
+.hero {
+  min-height: 70vh;
+  padding-top: 80px;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.85), rgba(0,0,0,.95)),
+    url("../img/corte.png") center/cover no-repeat;
+}
+
+/* CARROSSEL BANNER */
+#miniCarousel {
+  position: relative;
+  max-width: 1100px;
+  margin: 50px auto 0;
+  box-shadow: 0 20px 40px rgba(0,0,0,.6);
+}
+
+.mini-carousel-img {
+  height: 420px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* INDICADORES (BOLINHAS) */
+.mini-indicators {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.mini-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.45);
+  border: none;
+  margin: 0 5px;
+  opacity: 1;
+}
+
+.mini-indicators .active {
+  background-color: var(--gold);
+  width: 12px;
+  height: 12px;
+}
