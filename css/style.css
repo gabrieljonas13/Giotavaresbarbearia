@@ -32,14 +32,8 @@ body {
 /*hero */
 
 header {
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,.85), rgba(0,0,0,.95)),
-    url("../img/corte_risco_cabelogrande.jpg") center/cover no-repeat;
+  background-image: url("../img/corte.png") !important;
+  background-size: cover;
 }
 
 header h1 {
